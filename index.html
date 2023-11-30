@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Desafio DIO HTML</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="inicio">Título bonitão</h1>
+      <hr />
+    </header>
+    <h2 id="Índice">Índice</h2>
+    <nav>
+      <ul>
+        <li>
+          <a href="#tag-texto">Tags: &lt;h1&gt; ... &lt;h6&gt; e &lt;p&gt;</a>
+        </li>
+        <li>
+          <a href="#tag-lista">Tags: &lt;ol&gt;, &lt;ul&gt; e &lt;li&gt;</a>
+        </li>
+        <li>
+          <a href="#tag-estilo1">Tags: &lt;strong&gt;, &lt;i&gt; e &lt;u&gt;</a>
+        </li>
+        <li>
+          <a href="#tag-estilo2"
+            >Tags: &lt;mark&gt;, &lt;sub&gt; e &lt;sup&gt;</a
+          >
+        </li>
+        <li>
+          <a href="#tag-estilo3"
+            >Tags: &lt;blockquote&gt;, &lt;del&gt; e &lt;abbr&gt;</a
+          >
+        </li>
+        <li>
+          <a href="#tag-a"
+            >Tags: &lt;a&gt;, &lt;hr&gt; e menção honrosa &lt;font&gt;</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section id="tag-texto">
+      <h3>Tags: &lt;h1&gt; ... &lt;h6&gt; e &lt;p&gt;</h3>
+      <a href="#inicio">(voltar)</a>
+      <p>
+        A tag &lt;h1&gt; até &lt;h6&gt; serve para títulos, quanto o maior o
+        número da junto do h "menos importante" é o título, gerando assim o
+        subtítulos.
+      </p>
+      <p>Já a tag &lt;p&gt; define os paragrafos dentro do texto.</p>
+    </section>
+    <section id="tag-lista">
+      <h3>Tags: &lt;ol&gt;, &lt;ul&gt; e &lt;li&gt;</h3>
+      <a href="#inicio">(voltar)</a>
+      <p>
+        Tanto &lt;ol&gt; quanto &lt;ul&gt; geram listas, sendo &lt;li&gt; usada
+        para definir os itens dessas listas, contudo &lt;ol&gt; gera listas
+        ordenadas enquanto o &lt;ul&gt; não.
+      </p>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+          border: 2px dotted black;
+          max-width: 300px;
+          padding: 1rem;
+        "
+      >
+        <div>
+          <h4>Exemplo com ol:</h4>
+          <code>
+            <div>
+              <h5>Código:</h5>
+              &lt;ol> <br />
+              &nbsp; &lt;li>&lt;/li><br />
+              &nbsp; &lt;li>&lt;/li><br />
+              &nbsp; &lt;li>&lt;/li><br />
+              &lt;/ol>
+            </div>
+            <hr />
+            <div>
+              <h5>Saída:</h5>
+              <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </div>
+          </code>
+        </div>
+        <hr style="margin: 10px" />
+        <div>
+          <h4>Exemplo com ul:</h4>
+          <code>
+            <div>
+              <h5>Código:</h5>
+              &lt;ul> <br />
+              &nbsp; &lt;li>&lt;/li><br />
+              &nbsp; &lt;li>&lt;/li><br />
+              &nbsp; &lt;li>&lt;/li><br />
+              &lt;/ul>
+            </div>
+            <hr />
+            <div>
+              <h5>Saída:</h5>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </code>
+        </div>
+      </div>
+    </section>
+    <section id="tag-estilo1">
+      <h3>Tags: &lt;strong&gt;, &lt;i&gt; e &lt;u&gt;</h3>
+      <a href="#inicio">(voltar)</a>
+      <p>
+        A tag &lt;strong&gt; deixa o texto em <strong>negrito</strong>, assim
+        <b>como</b> a tag &lt;b&gt;<a href="#1"><sup>[1]</sup></a
+        >, e serve para dá importância a uma palavra ou frase.
+      </p>
+      <p>
+        A tag &lt;i&gt; é usada para dar destaque a um texto ou frase,
+        geralmente por ser um termo técnico, <i>expressão</i> ou outro idioma.
+        Possui um efeito em itálico, assim como a tag &lt;em&gt; que no caso é
+        usada para dar ênfase no texto<a href="#2"><sup>[2]</sup></a
+        >.
+      </p>
+      <p>
+        A tag &lt;u&gt; antes era conhecida como a tag <u>underline</u>, sendo
+        depreciada no HTML4<a href="#3"><sup>[3]</sup></a> e retornando no HTML5
+        como a tag <i>unarticulated</i>, ou seja, com o sentido definido para
+        uso de palavras escritas erroneamente.
+      </p>
+    </section>
+    <section id="tag-estilo2">
+      <h3>Tags: &lt;mark&gt;, &lt;sub&gt; e &lt;sup&gt;</h3>
+      <a href="#inicio">(voltar)</a>
+      <p>
+        A tag &lt;mark&gt; serve para dá relevância a um texto com um efeito de
+        <mark>marca-texto/background-color</mark>.
+      </p>
+      <p>
+        A tag &lt;sub&gt; cria um texto abaixo da "linha", por exemplo:
+        H<sub>2</sub>O - o "2" está usando a tag.
+      </p>
+      <p>
+        A tag &lt;sup&gt; cria um texto acima da "linha", por exemplo: A<sup
+          >2</sup
+        >
+        = B<sup>2</sup> + C<sup>2</sup>
+      </p>
+      <a href="#4"><sup>[4]</sup></a>
+    </section>
+    <section id="tag-estilo3">
+      <h3>Tags: &lt;blockquote&gt;, &lt;del&gt; e &lt;abbr&gt;</h3>
+      <a href="#inicio">(voltar)</a>
+      <p>
+        A tag &lt;blockquote&gt; cria uma citação grande, enquanto uma &lt;q&gt;
+        pode ser usada para citações pequenas - maior diferenças entre elas é
+        que a primeira dá um espaçamento e recuo, enquanto a segunda usa somente
+        aspas<a href="#5"><sup>[5]</sup></a
+        >.
+      </p>
+      <p>
+        A tag &lt;del&gt; serve para marca parte do texto que se tornou
+        irrelevante <del>como esse exemplo</del>
+      </p>
+      <p>
+        A tag &lt;abbr&gt; serve para designar abreviações, exemplo (passe o
+        mouse na palavra):
+        <abbr title="Organização das Nações Unidas">ONU</abbr>
+      </p>
+    </section>
+    <section id="tag-a">
+      <h3>Tags: &lt;a&gt;, &lt;hr&gt; e menção honrosa &lt;font&gt;</h3>
+      <a href="#inicio">(voltar)</a>
+      <p>
+        A tag &lt;a&gt; contém o atributo href com ele é possível criar
+        hiperlinks, no qual se pode acessar outras páginas ou baixar arquivos
+        entre várias outras coisas<a href="#6"><sup>[6]</sup></a
+        >.
+      </p>
+      <p>A tag &lt;hr&gt; define um quebra entre conteúdo.</p>
+      <p>
+        A tag &lt;font&gt; servia para definir uma fonte, cor e tamanho, porém
+        acabou sendo depreciada no html5<a href="#7"><sup>[7]</sup></a
+        >, sendo necessário fazer isso diretamente com css.
+      </p>
+    </section>
+    <footer>
+      <section>
+        <h3>Referências</h3>
+        <ol>
+          <li>
+            <p>
+              Sobre a
+              <a
+                id="1"
+                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/b"
+                >tag &lt;b&gt;</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Diferença entre
+              <a
+                id="2"
+                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/em"
+                >&lt;i&gt; e &lt;em&gt;</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Sobre a
+              <a
+                id="3"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u"
+              >
+                tag &lt;u&gt;
+              </a>
+            </p>
+          </li>
+          <li>
+            <p>
+              Sobre a
+              <a id="4" href="https://www.w3schools.com/tags/tag_sup.asp">
+                tag &lt;sup&gt; e &lt;sub&gt;
+              </a>
+            </p>
+          </li>
+          <li>
+            <p>
+              Um pouco sobre a
+              <a
+                id="5"
+                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q"
+              >
+                tag &lt;q&gt; e &lt;blockquote&gt;
+              </a>
+            </p>
+          </li>
+          <li>
+            <p>
+              Documentação da
+              <a
+                id="6"
+                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
+              >
+                tag &lt;a&gt;
+              </a>
+            </p>
+          </li>
+          <li>
+            <p>
+              O que a
+              <a id="7" href="https://www.w3schools.com/tags/tag_font.asp">
+                W3schools
+              </a>
+              diz sobre a tag &lt;font&gt;
+            </p>
+          </li>
+        </ol>
+      </section>
+      <div style="display: flex; justify-content: center">
+        <small>&copy; 2023 | copiar ou não copiar, eis o dev</small>
+      </div>
+    </footer>
+  </body>
+</html>
